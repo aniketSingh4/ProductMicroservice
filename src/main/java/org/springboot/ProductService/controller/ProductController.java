@@ -74,6 +74,12 @@ public class ProductController
 	
 	
 	//Specific method of Product Service
+	@GetMapping()
+	public void getProductController()
+	{
+		System.out.println("This is a Product Controller.");
+	}
+	
 	@GetMapping("/{id}")
 	Product getProductById(@PathVariable long id)
 	{
